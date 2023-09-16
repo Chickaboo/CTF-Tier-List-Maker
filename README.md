@@ -3,3 +3,4 @@ This is a simple Tier-List maker made for making CTF tier lists. You can use thi
 
 
 
+![tier-list (6)](https://github.com/Chickaboo/CTF-Tier-List-Maker/assets/131608268/7b4c6434-34ca-4ad5-af78-e696552ec4f9)
