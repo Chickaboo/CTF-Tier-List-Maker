@@ -3,4 +3,4 @@ This is a simple Tier-List maker made for making tier lists of the Minecraft Hiv
 
 
 
-![tier-list (6)](https://github.com/Chickaboo/CTF-Tier-List-Maker/assets/131608268/7b4c6434-34ca-4ad5-af78-e696552ec4f9)
+![tier-list (9)](https://github.com/Chickaboo/CTF-Tier-List-Maker/assets/131608268/e8fae4a1-ae8f-42b1-9aed-a9c51ad7b271)
