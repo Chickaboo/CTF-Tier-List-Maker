@@ -2,6 +2,9 @@
 <html lang="en">
 
 <head>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css">
+    <link rel="icon" type="image/x-png" href="favcon.jpg" />
+
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>CTF Tier List Maker</title>
@@ -25,7 +28,7 @@
             padding: 20px;
             background-color: #292929;
             /* Darker background color for container */
-            box-shadow: 0 0 10px rgba(255, 255, 255, 0.1);
+            box-shadow: 0 0 10px rgba(255, 255, 255, 0.3);
             /* Adjust shadow color for dark mode */
             display: flex;
             flex-direction: column;
@@ -327,10 +330,182 @@
         .menu-item:hover {
             background-color: #888;
         }
+
+        /* Reset default styles for buttons */
+        .toolbar {
+            background-color: #333;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            padding: 10px;
+        }
+
+        .toolbar-button {
+            background: none;
+            border: none;
+            color: white;
+            cursor: pointer;
+            margin: 0 10px;
+            display: flex;
+            align-items: center;
+            font-size: 16px;
+            transition: opacity 0.2s, transform 0.2s;
+        }
+
+        .toolbar-button i {
+            margin-right: 5px;
+        }
+
+        /* Hover and click effects */
+        .toolbar-button:hover {
+            opacity: 0.8;
+            transform: scale(1.05);
+            text-decoration: underline;
+        }
+
+        .toolbar-button:active {
+            transform: scale(0.95);
+        }
+
+        /* Message box styles */
+        .message-box {
+            background-color: #444;
+            text-align: center;
+            padding: 10px;
+            margin-top: 20px;
+        }
+
+        #message-text {
+            color: white;
+            font-size: 14px;
+            margin: 0;
+        }
+
+        @media only screen and (min-width: 601px) {
+            .mobile-warning {
+                display: none;
+            }
+        }
+
+        @media only screen and (max-width: 600px) {
+            body {
+                margin: 0;
+                overflow: hidden;
+            }
+
+            .container {
+                display: none;
+            }
+
+            .mobile-warning {
+                display: flex;
+                flex-direction: column;
+                align-items: center;
+                justify-content: center;
+                height: 100vh;
+                font-family: Arial, sans-serif;
+                background-color: #121212;
+                color: #fff;
+                position: fixed;
+                top: 0;
+                left: 0;
+                width: 100%;
+                z-index: 9999;
+            }
+
+            .mobile-warning i {
+                font-size: 50px;
+                margin-bottom: 20px;
+            }
+
+            .mobile-warning p {
+                font-size: 18px;
+                max-width: 80%;
+                text-align: center;
+            }
+        }
     </style>
 </head>
 
 <body>
+    <div class="menu" id="menu">
+        <div class="menu-item" draggable="true">Itzzlollipop</div>
+        <div class="menu-item" draggable="true">Itzzty1er</div>
+        <div class="menu-item" draggable="true">Zecsin</div>
+        <div class="menu-item" draggable="true">qQomvz</div>
+        <div class="menu-item" draggable="true">XxkrlavazxX</div>
+        <div class="menu-item" draggable="true">Fishingformate</div>
+        <div class="menu-item" draggable="true">triixxstr</div>
+        <div class="menu-item" draggable="true">Silent Rota</div>
+        <div class="menu-item" draggable="true">rpx IX</div>
+        <div class="menu-item" draggable="true">yhirz</div>
+        <div class="menu-item" draggable="true">AidanW0876</div>
+        <div class="menu-item" draggable="true">Melvin1342</div>
+        <div class="menu-item" draggable="true">FundaG0D</div>
+        <div class="menu-item" draggable="true">Itzzco</div>
+        <div class="menu-item" draggable="true">entirn</div>
+        <div class="menu-item" draggable="true">RBRSPY21</div>
+        <div class="menu-item" draggable="true">DARK ENERGY7729</div>
+        <div class="menu-item" draggable="true">XxLHFxX</div>
+        <div class="menu-item" draggable="true">halu860</div>
+        <div class="menu-item" draggable="true">ZxPqms</div>
+        <div class="menu-item" draggable="true">Curly011</div>
+        <div class="menu-item" draggable="true">yDorritoss</div>
+        <div class="menu-item" draggable="true">itzzparrotz</div>
+        <div class="menu-item" draggable="true">RNG 18</div>
+        <div class="menu-item" draggable="true">Autahz</div>
+        <div class="menu-item" draggable="true">babyycrackdad</div>
+        <div class="menu-item" draggable="true">Youngling01</div>
+        <div class="menu-item" draggable="true">Speedquokkas</div>
+        <div class="menu-item" draggable="true">Iz3l3na</div>
+        <div class="menu-item" draggable="true">Qu1lf</div>
+        <div class="menu-item" draggable="true">Bvnxiez</div>
+        <div class="menu-item" draggable="true">MarcyLangley</div>
+        <div class="menu-item" draggable="true">AnimeStarUwU</div>
+        <div class="menu-item" draggable="true">AFlintShard</div>
+        <div class="menu-item" draggable="true">l3sley</div>
+        <div class="menu-item" draggable="true">xGqldiee</div>
+        <div class="menu-item" draggable="true">brimxy</div>
+        <div class="menu-item" draggable="true">mqriposaroja</div>
+        <div class="menu-item" draggable="true">Oculus Flame</div>
+        <div class="menu-item" draggable="true">meqsurements</div>
+        <div class="menu-item" draggable="true">QwyqL</div>
+        <div class="menu-item" draggable="true">Sw3rveZ</div>
+        <div class="menu-item" draggable="true">zqbdi</div>
+        <div class="menu-item" draggable="true">ZxJota</div>
+        <div class="menu-item" draggable="true">Aki5576</div>
+        <div class="menu-item" draggable="true">Galaxy0513</div>
+        <div class="menu-item" draggable="true">ByeByeLoser9954</div>
+        <div class="menu-item" draggable="true">LittleDino9317</div>
+        <div class="menu-item" draggable="true">Flvfty</div>
+        <div class="menu-item" draggable="true">xXYoungGamer24x</div>
+    </div>
+
+    <body>
+        <div class="mobile-warning">
+            <i class="fas fa-desktop"></i>
+            <p>This application is only accessible on desktop. Please use a computer.</p>
+        </div>
+    </body>
+
+
+    <div class="toolbar">
+        <button id="download-btn" class="toolbar-button">
+            <i class="fas fa-download"></i> Download
+        </button>
+        <input type="file" id="load-btn" style="display: none;">
+
+        <button id="load-tier-list-btn" class="toolbar-button">
+            <i class="fas fa-upload"></i> Load
+        </button>
+        <button id="save-btn" class="toolbar-button">
+            <i class="fas fa-save"></i> Save
+        </button>
+        <a href="https://github.com/Chickaboo/CTF-Tier-List-Maker" target="_blank" class="toolbar-button">
+            <i class="fab fa-github"></i> GitHub
+        </a>
+    </div>
+
     <div class="container">
         <h1>Tier List Maker</h1>
         <!-- Switch to toggle the oval container (with "checked" attribute) -->
@@ -341,6 +516,7 @@
                 <span class="slider"></span>
             </label>
         </div>
+        <br>
         <div class="tier-list-container" id="tier-list-container">
             <!-- Oval container (included in the tier list) -->
             <div class="tier oval-container" id="oval-container">
@@ -353,190 +529,125 @@
             <!-- Menu for dragging words -->
             <div class="tier">
                 <div class="tier-letter" style="background-color: #FF5733;">S</div>
-                <textarea type="text" placeholder="Enter players" class="tier-textarea"></textarea>
+                <textarea type="text" placeholder="Enter players" class="tier-textarea" spellcheck="false"></textarea>
             </div>
             <div class="tier">
                 <div class="tier-letter" style="background-color: #FFA500;">A</div>
-                <textarea type="text" placeholder="Enter players" class="tier-textarea"></textarea>
+                <textarea type="text" placeholder="Enter players" class="tier-textarea" spellcheck="false"></textarea>
             </div>
             <div class="tier">
                 <div class="tier-letter" style="background-color: #FFFF00;">B</div>
-                <textarea type="text" placeholder="Enter players" class="tier-textarea"></textarea>
+                <textarea type="text" placeholder="Enter players" class="tier-textarea" spellcheck="false"></textarea>
             </div>
             <div class="tier">
                 <div class="tier-letter" style="background-color: #008000;">C</div>
-                <textarea type="text" placeholder="Enter players" class="tier-textarea"></textarea>
+                <textarea type="text" placeholder="Enter players" class="tier-textarea" spellcheck="false"></textarea>
             </div>
             <div class="tier">
                 <div class="tier-letter" style="background-color: #0000FF;">D</div>
-                <textarea type="text" placeholder="Enter players" class="tier-textarea"></textarea>
+                <textarea type="text" placeholder="Enter players" class="tier-textarea" spellcheck="false"></textarea>
             </div>
             <div class="tier">
                 <div class="tier-letter" style="background-color: #00ff00;">F</div>
-                <textarea type="text" placeholder="Enter players" class="tier-textarea"></textarea>
+                <textarea type="text" placeholder="Enter players" class="tier-textarea" spellcheck="false"></textarea>
             </div>
             <div class="tier">
                 <div class="tier-letter" style="background-color: #ff0000;">H</div>
-                <textarea type="text" placeholder="Enter players" class="tier-textarea"></textarea>
+                <textarea type="text" placeholder="Enter players" class="tier-textarea" spellcheck="false"></textarea>
             </div>
-        </div>
-        <button class="download-button" id="download-btn">Download Tier List</button>
-        <div class="menu" id="menu">
-            <div class="menu-item" draggable="true">Itzzlollipop</div>
-            <div class="menu-item" draggable="true">Itzzty1er</div>
-            <div class="menu-item" draggable="true">Zecsin</div>
-            <div class="menu-item" draggable="true">qQomvz</div>
-            <div class="menu-item" draggable="true">XxkrlavazxX</div>
-            <div class="menu-item" draggable="true">Fishingformate</div>
-            <div class="menu-item" draggable="true">triixxstr</div>
-            <div class="menu-item" draggable="true">Silent Rota</div>
-            <div class="menu-item" draggable="true">rpx IX</div>
-            <div class="menu-item" draggable="true">yhirz</div>
-            <div class="menu-item" draggable="true">AidanW0876</div>
-            <div class="menu-item" draggable="true">Melvin1342</div>
-            <div class="menu-item" draggable="true">FundaG0D</div>
-            <div class="menu-item" draggable="true">Itzzco</div>
-            <div class="menu-item" draggable="true">entirn</div>
-            <div class="menu-item" draggable="true">RBRSPY21</div>
-            <div class="menu-item" draggable="true">DARK ENERGY7729</div>
-            <div class="menu-item" draggable="true">XxLHFxX</div>
-            <div class="menu-item" draggable="true">halu860</div>
-            <div class="menu-item" draggable="true">ZxPqms</div>
-            <div class="menu-item" draggable="true">Curly011</div>
-            <div class="menu-item" draggable="true">yDorritoss</div>
-            <div class="menu-item" draggable="true">itzzparrotz</div>
-            <div class="menu-item" draggable="true">RNG 18</div>
-            <div class="menu-item" draggable="true">Autahz</div>
-            <div class="menu-item" draggable="true">babyycrackdad</div>
-            <div class="menu-item" draggable="true">Youngling01</div>
-            <div class="menu-item" draggable="true">Speedquokkas</div>
-            <div class="menu-item" draggable="true">Iz3l3na</div>
-            <div class="menu-item" draggable="true">Qu1lf</div>
-            <div class="menu-item" draggable="true">Bvnxiez</div>
-            <div class="menu-item" draggable="true">MarcyLangley</div>
-            <div class="menu-item" draggable="true">AnimeStarUwU</div>
-            <div class="menu-item" draggable="true">AFlintShard</div>
-            <div class="menu-item" draggable="true">l3sley</div>
-            <div class="menu-item" draggable="true">xGqldiee</div>
-            <div class="menu-item" draggable="true">brimxy</div>
-            <div class="menu-item" draggable="true">mqriposaroja</div>
-            <div class="menu-item" draggable="true">Oculus Flame</div>
-            <div class="menu-item" draggable="true">meqsurements</div>
-            <div class="menu-item" draggable="true">QwyqL</div>
-            <div class="menu-item" draggable="true">Sw3rveZ</div>
-            <div class="menu-item" draggable="true">zqbdi</div>
-            <div class="menu-item" draggable="true">ZxJota</div>
-            <div class="menu-item" draggable="true">Aki5576</div>
-            <div class="menu-item" draggable="true">Galaxy0513</div>
-            <div class="menu-item" draggable="true">ByeByeLoser9954</div>
-            <div class="menu-item" draggable="true">LittleDino9317</div>
-            <div class="menu-item" draggable="true">Flvfty</div>
-            <div class="menu-item" draggable="true">xXYoungGamer24x</div>
-        </div>
-        <!-- Add a file input element for loading tier lists -->
-        <input type="file" accept=".txt" id="load-btn" style="display: none;">
-        <!-- Add a button to save the tier list as a text file -->
-        <button class="save-button" id="save-btn">Save as Text</button>
-        <input type="file" accept=".txt" id="load-btn" style="display: none;">
-        <button class="load-button" id="load-tier-list-btn">Load Tier List</button>
-        <script src="https://cdnjs.cloudflare.com/ajax/libs/dom-to-image/2.6.0/dom-to-image.min.js"></script>
-        <script>
-            const menu = document.getElementById('menu');
-            const tierListContainer = document.getElementById('tier-list-container');
-            const downloadButton = document.getElementById('download-btn');
-            const ovalContainer = document.getElementById('oval-container');
-            const toggleSwitch = document.getElementById('toggle-oval-container');
-            const loadButton = document.getElementById('load-btn');
-            const saveButton = document.getElementById('save-btn');
-            const loadTierListButton = document.getElementById('load-tier-list-btn'); // Reference to the new load button
-            // Function to handle clicking on menu items and adding them to the active tier input or textarea
-            menu.addEventListener('click', (e) => {
-                const clickedMenuItem = e.target;
-                if (clickedMenuItem.classList.contains('menu-item')) {
-                    const activeTierInput = document.querySelector('.tier-input.active');
-                    const activeTierTextarea = document.querySelector('.tier-textarea.active');
-                    if (activeTierInput) {
-                        // Append the clicked word to the active tier input without overwriting
-                        activeTierInput.value += ` ${clickedMenuItem.innerText}`;
-                    } else if (activeTierTextarea) {
-                        // Append the clicked word to the active tier textarea without overwriting
-                        activeTierTextarea.value += ` ${clickedMenuItem.innerText}`;
-                    }
-                }
-            });
-            // Function to handle clicking on tier inputs or textareas to make them active
-            tierListContainer.addEventListener('click', (e) => {
-                const clickedTierInput = e.target.closest('.tier-input');
-                const clickedTierTextarea = e.target.closest('.tier-textarea');
-                if (clickedTierInput || clickedTierTextarea) {
-                    // Make the clicked tier input or textarea active
-                    const activeTierInput = document.querySelector('.tier-input.active');
-                    const activeTierTextarea = document.querySelector('.tier-textarea.active');
-                    if (activeTierInput) {
-                        activeTierInput.classList.remove('active');
-                    }
-                    if (activeTierTextarea) {
-                        activeTierTextarea.classList.remove('active');
-                    }
-                    if (clickedTierInput) {
-                        clickedTierInput.classList.add('active');
-                    } else if (clickedTierTextarea) {
-                        clickedTierTextarea.classList.add('active');
-                    }
-                }
-            });
-            // Function to toggle the oval container
-            toggleSwitch.addEventListener('change', () => {
-                ovalContainer.style.display = toggleSwitch.checked ? 'flex' : 'none';
-            });
-            // Function to download the tier list as an image using dom-to-image
-            downloadButton.addEventListener('click', () => {
-                const tierListContainer = document.getElementById('tier-list-container');
-                // Capture the content of the tierListContainer as an image
-                domtoimage.toBlob(tierListContainer).then(function(blob) {
-                    // Create a download link for the image
-                    const a = document.createElement('a');
-                    a.href = URL.createObjectURL(blob);
-                    a.download = 'tier-list.png';
-                    a.click();
-                });
-            });
-            // Function to save the tier list as a text file
-            saveButton.addEventListener('click', () => {
-                const tierInputs = document.querySelectorAll('.tier-input, .tier-textarea'); // Select both input and textarea elements
-                const tierListText = Array.from(tierInputs).map(input => input.value).join('\n');
-                const blob = new Blob([tierListText], {
-                    type: 'text/plain'
-                });
-                const a = document.createElement('a');
-                a.href = URL.createObjectURL(blob);
-                a.download = 'tier-list.txt';
-                a.click();
-            });
-            // Function to load a tier list from a text file
-            loadTierListButton.addEventListener('click', () => {
-                loadButton.click(); // Trigger the file input to open the file dialog
-            });
-            loadButton.addEventListener('change', (e) => {
-                const file = e.target.files[0];
-                if (file) {
-                    const reader = new FileReader();
-                    reader.onload = function(e) {
-                        const loadedTierList = e.target.result;
-                        // Parse and populate your tier list here (replace this with your logic)
-                        const lines = loadedTierList.split('\n');
-                        const tierInputs = document.querySelectorAll('.tier-input, .tier-textarea'); // Select both input and textarea elements
-                        for (let i = 0; i < lines.length; i++) {
-                            const tierElement = tierInputs[i];
-                            if (tierElement) {
-                                tierElement.value = lines[i].trim();
+
+            <script src="https://cdnjs.cloudflare.com/ajax/libs/dom-to-image/2.6.0/dom-to-image.min.js"></script>
+            <script>
+                document.addEventListener('DOMContentLoaded', function () {
+                    const menu = document.getElementById('menu');
+                    const tierListContainer = document.getElementById('tier-list-container');
+                    const downloadButton = document.getElementById('download-btn');
+                    const ovalContainer = document.getElementById('oval-container');
+                    const toggleSwitch = document.getElementById('toggle-oval-container');
+                    const loadButton = document.getElementById('load-btn');
+                    const saveButton = document.getElementById('save-btn');
+                    const loadTierListButton = document.getElementById('load-tier-list-btn');
+                    menu.addEventListener('click', (e) => {
+                        const clickedMenuItem = e.target;
+                        if (clickedMenuItem.classList.contains('menu-item')) {
+                            const activeTierInput = document.querySelector('.tier-input.active');
+                            const activeTierTextarea = document.querySelector('.tier-textarea.active');
+                            if (activeTierInput) {
+                                activeTierInput.value += ` ${clickedMenuItem.innerText}`;
+                            } else if (activeTierTextarea) {
+                                activeTierTextarea.value += ` ${clickedMenuItem.innerText}`;
                             }
                         }
-                    };
-                    reader.readAsText(file);
-                }
-            });
-        </script>
+                    });
+
+                    tierListContainer.addEventListener('click', (e) => {
+                        const clickedTierInput = e.target.closest('.tier-input');
+                        const clickedTierTextarea = e.target.closest('.tier-textarea');
+                        if (clickedTierInput || clickedTierTextarea) {
+                            const activeTierInput = document.querySelector('.tier-input.active');
+                            const activeTierTextarea = document.querySelector('.tier-textarea.active');
+                            if (activeTierInput) {
+                                activeTierInput.classList.remove('active');
+                            }
+                            if (activeTierTextarea) {
+                                activeTierTextarea.classList.remove('active');
+                            }
+                            if (clickedTierInput) {
+                                clickedTierInput.classList.add('active');
+                            } else if (clickedTierTextarea) {
+                                clickedTierTextarea.classList.add('active');
+                            }
+                        }
+                    });
+
+                    toggleSwitch.addEventListener('change', () => {
+                        ovalContainer.style.display = toggleSwitch.checked ? 'flex' : 'none';
+                    });
+
+                    downloadButton.addEventListener('click', () => {
+                        domtoimage.toBlob(tierListContainer).then(function (blob) {
+                            const a = document.createElement('a');
+                            a.href = URL.createObjectURL(blob);
+                            a.download = 'tier-list.png';
+                            a.click();
+                        });
+                    });
+
+                    saveButton.addEventListener('click', () => {
+                        const tierInputs = document.querySelectorAll('.tier-input, .tier-textarea');
+                        const tierListText = Array.from(tierInputs).map(input => input.value).join('\n');
+                        const blob = new Blob([tierListText], {
+                            type: 'text/plain'
+                        });
+                        const a = document.createElement('a');
+                        a.href = URL.createObjectURL(blob);
+                        a.download = 'tier-list.txt';
+                        a.click();
+                    });
+
+                    loadTierListButton.addEventListener('click', () => {
+                        loadButton.click();
+                    });
+                    loadButton.addEventListener('change', (e) => {
+                        const file = e.target.files[0];
+                        if (file) {
+                            const reader = new FileReader();
+                            reader.onload = function (e) {
+                                const loadedTierList = e.target.result;
+                                const lines = loadedTierList.split('\n');
+                                const tierInputs = document.querySelectorAll('.tier-input, .tier-textarea');
+                                for (let i = 0; i < lines.length; i++) {
+                                    const tierElement = tierInputs[i];
+                                    if (tierElement) {
+                                        tierElement.value = lines[i].trim();
+                                    }
+                                }
+                            };
+                            reader.readAsText(file);
+                        }
+                    });
+                });
+            </script>
 </body>
 
 </html>
